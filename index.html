@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls-Royce | Luxury Automobiles</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">
+                    <img src="images/logo.png" alt="Rolls-Royce" class="logo">
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#models">Models</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#heritage">Heritage</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="theme-icon"></i>
+                    <i data-lucide="moon" class="theme-icon hidden"></i>
+                </button>
+                <button class="luxury-btn test-drive-btn">Book a Test Drive</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="video-background">
+            <div class="overlay"></div>
+            <video autoplay muted loop playsinline id="heroVideo">
+                <source src="98022-646632858.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="container">
+            <div class="hero-content animate-fade-in">
+                <!-- Animated RR Logo Canvas -->
+                <div class="animated-logo-container">
+                    <canvas id="animatedLogo" class="animated-logo" width="200" height="200"></canvas>
+                </div>
+                <h1 class="animate-fade-in-up">     Rolls-Royce Motor Cars</h1>
+                <div class="gold-divider animate-width"></div>
+                <p class="animate-fade-in-up delay-1">Strive for Perfection in Everything You Do</p>
+                <button class="luxury-btn animate-fade-in-up delay-2">Experience Luxury</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+        <div class="gradient-overlay"></div>
+    </section>
+
+    <!-- Spirit of Ecstasy Showcase -->
+    <section class="spirit-showcase section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">The Spirit of Ecstasy</h2>
+            <div class="reveal">
+                <div id="spiritContainer" class="spirit-container"></div>
+            </div>
+            <p class="spirit-description reveal">
+                The Spirit of Ecstasy is the bonnet ornament sculpture on Rolls-Royce cars. It depicts a woman leaning
+                forwards with her arms outstretched behind and above her. Billowing cloth runs from her arms to her back,
+                resembling wings.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3D Rotating RR Logo -->
+    <section class="rotating-logo-section section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">Excellence in Motion</h2>
+            <div class="reveal">
+                <div id="rotatingLogoContainer" class="rotating-logo-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcases -->
+    <section class="video-gallery section-padding" id="videos">
+        <div class="container">
+            <h2 class="section-title reveal">Experience Excellence</h2>
+
+            <div class="video-grid reveal">
+                <!-- Phantom Video Showcase -->
+                <div class="video-showcase">
+                    <video src="phntomvideo.mp4" class="showcase-video" autoplay muted loop playsinline></video>
+                    <div class="video-overlay">
+                        <h3>Phantom</h3>
+                        <p>The pinnacle of luxury, Phantom is the signature Rolls-Royce.</p>
+                    </div>
+                    <div class="video-controls">
+                        <button class="video-control-btn play-pause-btn">
+                            <i data-lucide="pause"></i>
+                        </button>
+                        <button class="video-control-btn mute-btn">
+                            <i data-lucide="volume-x"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Ghost Video Showcase -->
+                <div class="video-showcase">
+                    <video src="ghostvideos.mp4" class="showcase-video" autoplay muted loop playsinline></video>
+                    <div class="video-overlay">
+                        <h3>Ghost</h3>
+                        <p>The purest expression of Rolls-Royce yet.</p>
+                    </div>
+                    <div class="video-controls">
+                        <button class="video-control-btn play-pause-btn">
+                            <i data-lucide="pause"></i>
+                        </button>
+                        <button class="video-control-btn mute-btn">
+                            <i data-lucide="volume-x"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cullinan Video Showcase -->
+                <div class="video-showcase">
+                    <video src="cullian video.mp4" class="showcase-video" autoplay muted loop playsinline></video>
+                    <div class="video-overlay">
+                        <h3>Cullinan</h3>
+                        <p>The first all-terrain SUV from Rolls-Royce.</p>
+                    </div>
+                    <div class="video-controls">
+                        <button class="video-control-btn play-pause-btn">
+                            <i data-lucide="pause"></i>
+                        </button>
+                        <button class="video-control-btn mute-btn">
+                            <i data-lucide="volume-x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models section-padding" id="models">
+        <div class="container">
+            <h2 class="section-title reveal">Our Exquisite Models</h2>
+            
+            <div class="model-showcase reveal">
+                <div class="model-display">
+                    <div class="model-image-container">
+                        <img src="phatom.jpg" alt="Phantom" class="model-image active" data-model="phantom">
+                        <img src="cullian2.png" alt="Cullinan" class="model-image" data-model="cullinan">
+                        <img src="ghost.png" alt="Ghost" class="model-image" data-model="ghost">
+                        <img src="wraith.png" alt="Wraith" class="model-image" data-model="wraith">
+                        <img src="spectra.png" alt="Spectre" class="model-image" data-model="spectre">
+                    </div>
+                    <div class="model-overlay">
+                        <h3 id="modelName">Phantom</h3>
+                        <p id="modelPrice">$460,000</p>
+                    </div>
+                    <button class="nav-arrow prev-model" aria-label="Previous model">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button class="nav-arrow next-model" aria-label="Next model">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="model-details">
+                    <h3 id="detailModelName" class="gold-text">Phantom</h3>
+                    <p id="modelDescription" class="model-description">
+                        The pinnacle of luxury, Phantom is the signature Rolls-Royce. A world of unmatched excellence and sophistication.
+                    </p>
+                    
+                    <div class="specs-container">
+                        <h4>Specifications</h4>
+                        <div class="specs-grid" id="modelSpecs">
+                            <div class="spec-item">
+                                <span class="spec-name">Engine</span>
+                                <span class="spec-value">6.75L V12 Twin-Turbo</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Power</span>
+                                <span class="spec-value">563 hp / 664 lb-ft</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Acceleration</span>
+                                <span class="spec-value">0-60 mph: 5.1s</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Top Speed</span>
+                                <span class="spec-value">155 mph (limited)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Transmission</span>
+                                <span class="spec-value">8-Speed Automatic</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-name">Drivetrain</span>
+                                <span class="spec-value">Rear-Wheel Drive</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="features-container">
+                        <h4>Key Features</h4>
+                        <ul class="features-list" id="modelFeatures">
+                            <li>Starlight Headliner</li>
+                            <li>Bespoke Audio System</li>
+                            <li>Whisper-Quiet Cabin</li>
+                            <li>Rear Theater Configuration</li>
+                            <li>Champagne Cooler</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="luxury-btn full-width">Book a Test Drive</button>
+                </div>
+            </div>
+            
+            <div class="model-thumbnails reveal">
+                <div class="thumbnail active" data-model="phantom">
+                    <img src="phatom.jpg" alt="Phantom">
+                    <p>Phantom</p>
+                </div>
+                <div class="thumbnail" data-model="cullinan">
+                    <img src="cullian2.jpg" alt="Cullinan">
+                    <p>Cullinan</p>
+                </div>
+                <div class="thumbnail" data-model="ghost">
+                    <img src="ghost.png" alt="Ghost">
+                    <p>Ghost</p>
+                </div>
+                <div class="thumbnail" data-model="wraith">
+                    <img src="wraith.png" alt="Wraith">
+                    <p>Wraith</p>
+                </div>
+                <div class="thumbnail" data-model="spectre">
+                    <img src="spectra.png" alt="Spectre">
+                    <p>Spectre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">Unparalleled Luxury</h2>
+            
+            <div class="features-grid reveal">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3>Engineering Excellence</h3>
+                    <p>Handcrafted perfection in every detail, with meticulous attention to the finest elements of automotive design.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3>Bespoke Design</h3>
+                    <p>Customization without compromise, tailored to your exact specifications and personal aesthetic preferences.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="crown"></i>
+                    </div>
+                    <h3>Royal Heritage</h3>
+                    <p>A legacy of luxury since 1904, serving the most discerning clientele with unparalleled automotive experiences.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3>Uncompromising Quality</h3>
+                    <p>Only the finest materials sourced from around the world, meeting our exacting standards of excellence.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3>Timeless Design</h3>
+                    <p>Aesthetic principles that transcend trends, creating motor cars that remain elegant for generations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>Effortless Performance</h3>
+                    <p>Power delivered with grace and refinement, ensuring a driving experience that is both dynamic and serene.</p>
+                </div>
+            </div>
+            
+            <div class="quote-container reveal">
+                <p class="quote">"Strive for perfection in everything you do. Take the best that exists and make it better. When it does not exist, design it."</p>
+                <p class="quote-author">— Sir Henry Royce</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <h2 class="section-title reveal">Gallery of Excellence</h2>
+            
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" data-id="1">
+                    <img src="rrmansion.png" alt="Rolls-Royce Phantom in front of luxury mansion">
+                    <div class="gallery-overlay">
+                        <span>View Image</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-id="2">
+                    <img src="RRinterrior.png" alt="Rolls-Royce Ghost interior craftsmanship">
+                    <div class="gallery-overlay">
+                        <span>View Image</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-id="3">
+                    <img src="RRinmoutain.png" alt="Rolls-Royce Cullinan in mountainous terrain">
+                    <div class="gallery-overlay">
+                        <span>View Image</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-id="4">
+                    <img src="RRsuset.png" alt="Rolls-Royce Wraith at sunset">
+                    <div class="gallery-overlay">
+                        <span>View Image</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-id="5">
+                    <img src="buildings.png" alt="Rolls-Royce ">
+                    <div class="gallery-overlay">
+                        <span>View Image</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-id="6">
+                    <img src="rrspirit.png" alt="Rolls-Royce Spirit of Ecstasy">
+                    <div class="gallery-overlay">
+                        <span>View Image</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <img src="/placeholder.svg" alt="" id="lightboxImage">
+                <button class="lightbox-close" id="lightboxClose">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="heritage section-padding" id="heritage">
+        <div class="container">
+            <h2 class="section-title reveal">Our Rich Heritage</h2>
+            
+            <div class="timeline reveal">
+                <div class="timeline-track"></div>
+                
+                <div class="timeline-point active" data-year="1904">
+                    <div class="point-circle">04</div>
+                    <div class="point-year">1904</div>
+                </div>
+                
+                <div class="timeline-point" data-year="1907">
+                    <div class="point-circle">07</div>
+                    <div class="point-year">1907</div>
+                </div>
+                
+                <div class="timeline-point" data-year="1925">
+                    <div class="point-circle">25</div>
+                    <div class="point-year">1925</div>
+                </div>
+                
+                <div class="timeline-point" data-year="2003">
+                    <div class="point-circle">03</div>
+                    <div class="point-year">2003</div>
+                </div>
+                
+                <div class="timeline-point" data-year="2023">
+                    <div class="point-circle">23</div>
+                    <div class="point-year">2023</div>
+                </div>
+            </div>
+            
+            <div class="heritage-content reveal">
+                <div class="heritage-image">
+                    <img src="" alt="The Beginning" id="heritageImage">
+                    <div class="image-overlay"></div>
+                </div>
+                
+                <div class="heritage-details">
+                    <h3 id="heritageTitle" class="gold-text">The Beginning</h3>
+                    <p id="heritageYear" class="heritage-year">1904</p>
+                    <p id="heritageDescription" class="heritage-description">
+                        Charles Rolls and Henry Royce meet at the Midland Hotel in Manchester, forming an iconic partnership.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="heritage-footer reveal">
+                <p>For over a century, Rolls-Royce has stood as the pinnacle of automotive luxury, craftsmanship, and engineering excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">Client Testimonials</h2>
+            
+            <div class="testimonials-container reveal">
+                <div class="quote-icon">
+                    <i data-lucide="quote"></i>
+                </div>
+                
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonial active" data-id="1">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <img src="images/testimonial1.jpg" alt="Jonathan Pierce">
+                            </div>
+                            
+                            <div class="testimonial-text">
+                                <p class="testimonial-quote">
+                                    "My Phantom is more than a car; it's a statement of achievement and a sanctuary of tranquility in my busy life."
+                                </p>
+                                <h3 class="testimonial-name">Jonathan Pierce</h3>
+                                <p class="testimonial-position">CEO, Global Ventures</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial" data-id="2">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <img src="images/testimonial2.jpg" alt="Elizabeth Harrington">
+                            </div>
+                            
+                            <div class="testimonial-text">
+                                <p class="testimonial-quote">
+                                    "The craftsmanship in my bespoke Ghost rivals the finest pieces in my art collection. It's a masterpiece on wheels."
+                                </p>
+                                <h3 class="testimonial-name">Elizabeth Harrington</h3>
+                                <p class="testimonial-position">Art Collector</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial" data-id="3">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <img src="images/testimonial3.jpg" alt="Richard Montgomery">
+                            </div>
+                            
+                            <div class="testimonial-text">
+                                <p class="testimonial-quote">
+                                    "The Cullinan has transformed how I experience luxury travel. From city streets to country estates, it's flawless."
+                                </p>
+                                <h3 class="testimonial-name">Richard Montgomery</h3>
+                                <p class="testimonial-position">Real Estate Magnate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-navigation">
+                    <button class="testimonial-nav prev-testimonial">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    
+                    <div class="testimonial-dots">
+                        <button class="dot active" data-id="1"></button>
+                        <button class="dot" data-id="2"></button>
+                        <button class="dot" data-id="3"></button>
+                    </div>
+                    
+                    <button class="testimonial-nav next-testimonial">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Contact Us</h2>
+            
+            <div class="contact-container reveal">
+                <div class="contact-form-container">
+                    <h3>Send an Inquiry</h3>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="model">Model of Interest</label>
+                            <select id="model" name="model" required>
+                                <option value="">Select a model</option>
+                                <option value="phantom">Phantom</option>
+                                <option value="cullinan">Cullinan</option>
+                                <option value="ghost">Ghost</option>
+                                <option value="wraith">Wraith</option>
+                                <option value="spectre">Spectre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="luxury-btn full-width">
+                            <i data-lucide="send" class="btn-icon"></i> Send Inquiry
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Our Information</h3>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Visit Us</h4>
+                                <p>
+                                    Rolls-Royce Motor Cars<br>
+                                    Goodwood, Chichester<br>
+                                    West Sussex, PO18 0PH<br>
+                                    United Kingdom
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Call Us</h4>
+                                <p>+44 1243 384000</p>
+                                <p class="info-note">Monday to Friday, 9am - 6pm GMT</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email Us</h4>
+                                <p>inquiry@rolls-roycemotorcars.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-container">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#home">
+                        <img src="images/logo.png" alt="Rolls-Royce" class="footer-logo">
+                    </a>
+                    <p>The Spirit of Ecstasy is the embodiment of luxury, craftsmanship, and engineering excellence.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#models">Models</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#heritage">Heritage</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Models</h3>
+                    <ul class="footer-links">
+                        <li><a href="#phantom">Phantom</a></li>
+                        <li><a href="#cullinan">Cullinan</a></li>
+                        <li><a href="#ghost">Ghost</a></li>
+                        <li><a href="#wraith">Wraith</a></li>
+                        <li><a href="#spectre">Spectre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <span class="contact-bullet">•</span>
+                            <span>
+                                Goodwood, Chichester<br>
+                                West Sussex, PO18 0PH<br>
+                                vishakaptnam
+                            </span>
+                        </li>
+                        <li>
+                            <span class="contact-bullet">•</span>
+                            <span>+91 7893408447</span>
+                        </li>
+                        <li>
+                            <span class="contact-bullet">•</span>
+                            <span>inquiry@rolls-roycemotorcars.com(ashok143@gmial.com)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Rolls-Royce Motor Cars. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+        
+        <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+            <i data-lucide="chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
